@@ -6,7 +6,8 @@
 [spring data](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 
 
-## 工具
+## 工具  
+flyway
 git  
 [visual Paradigm](https://www.visual-paradigm.com)  
 [mybatis](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)  
@@ -24,4 +25,7 @@ create table USER
     constraint USER_PK
         primary key (ID)
 );
+```
+```bash
+mvn flyway:migrate
 ```
