@@ -9,6 +9,7 @@
 ## 工具  
 flyway
 git  
+lombok(@Data省略set，get，toString等)  
 [visual Paradigm](https://www.visual-paradigm.com)  
 [mybatis](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)  
 

@@ -7,9 +7,7 @@ import life.wz.community.community.mapper.UserMapper;
 import life.wz.community.community.model.Question;
 import life.wz.community.community.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -57,16 +55,19 @@ public class PublishController {
 
         User user = null;
         Cookie[] cookies = request.getCookies();
-        for(Cookie cookie:cookies){
-            if("token".equals(cookie.getName())){
-                String token = cookie.getValue();
-                user = userMapper.findByToken(token);
-                if(user!=null){
-                    request.getSession().setAttribute("user",user);
+        if(cookies!=null&&cookies.length!=0){
+            for(Cookie cookie:cookies){
+                if("token".equals(cookie.getName())){
+                    String token = cookie.getValue();
+                    user = userMapper.findByToken(token);
+                    if(user!=null){
+                        request.getSession().setAttribute("user",user);
+                    }
+                    break;
                 }
-                break;
             }
         }
+
         if(user == null){
             model.addAttribute("error","用户未登录");
             return "publish";

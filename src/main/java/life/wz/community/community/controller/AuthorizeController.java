@@ -1,5 +1,4 @@
 package life.wz.community.community.controller;
-
 import life.wz.community.community.dto.AccessTokenDTO;
 import life.wz.community.community.dto.GithubUser;
 import life.wz.community.community.mapper.UserMapper;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -54,6 +52,7 @@ public class AuthorizeController {
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            user.setAvatarUrl(githubUser.getAvatar_url());
             userMapper.inset(user);
             response.addCookie(new Cookie("token",token));
             return "redirect:/";
