@@ -12,6 +12,7 @@ git
 lombok(@Data省略set，get，toString等)  
 [visual Paradigm](https://www.visual-paradigm.com)  
 [mybatis](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)  
+devtools(spring “热”部署工具)
 
 ## 脚本  
 ```sql
