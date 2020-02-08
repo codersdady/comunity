@@ -13,6 +13,7 @@ git
 lombok(@Data省略set，get，toString等)  
 [visual Paradigm](https://www.visual-paradigm.com)  
 [mybatis](http://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/)  
+[mybatis generator](http://mybatis.org/generator/)
 devtools(spring “热”部署工具)
 
 ## 脚本  
@@ -31,4 +32,5 @@ create table USER
 ```
 ```bash
 mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```
