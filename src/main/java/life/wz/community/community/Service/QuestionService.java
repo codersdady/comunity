@@ -4,6 +4,7 @@ import life.wz.community.community.dto.PaginationDTO;
 import life.wz.community.community.dto.QuestionDTO;
 import life.wz.community.community.exception.CustomizeException;
 import life.wz.community.community.exception.CustomizedErrorCode;
+import life.wz.community.community.mapper.QuestionExtMapper;
 import life.wz.community.community.mapper.QuestionMapper;
 import life.wz.community.community.mapper.UserMapper;
 import life.wz.community.community.model.Question;
@@ -24,6 +25,8 @@ public class QuestionService {
     private QuestionMapper questionMapper;
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private QuestionExtMapper questionExtMapper;
 
     public PaginationDTO list(Integer page, Integer size) {
 
@@ -48,7 +51,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public PaginationDTO list(Integer userId, Integer page, Integer size) {
+    public PaginationDTO list(Long userId, Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
 
         QuestionExample questionExample = new QuestionExample();
@@ -81,7 +84,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public QuestionDTO getById(Integer id) {
+    public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         if (question == null) {
             throw new CustomizeException(CustomizedErrorCode.QUESTION_NOT_FOUND);
@@ -117,5 +120,15 @@ public class QuestionService {
                 throw new CustomizeException(CustomizedErrorCode.QUESTION_NOT_FOUND);
             }
         }
+    }
+
+    public void incView(Long id) {
+        Question question=new Question();
+        question.setId(id);
+        question.setViewCount(1);
+        questionExtMapper.incView(question);
+
+
+
     }
 }
