@@ -4,6 +4,7 @@ import life.wz.community.community.Service.CommentService;
 import life.wz.community.community.Service.QuestionService;
 import life.wz.community.community.dto.CommentDTO;
 import life.wz.community.community.dto.QuestionDTO;
+import life.wz.community.community.enums.CommentTypeEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,11 +24,15 @@ public class QuestionController {
     @GetMapping("/question/{id}")
     public String question(@PathVariable(name = "id") Long id,
                            Model model){
-        List<CommentDTO> comments = commentService.listByQuestionId(id);
-        questionService.incView(id);
         QuestionDTO questionDTO=questionService.getById(id);
+        List<QuestionDTO> relatedQuestions = questionService.selectRelated(questionDTO);
+        List<CommentDTO> comments = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
+        questionService.incView(id);
+
+
         model.addAttribute("question",questionDTO);
         model.addAttribute("comments",comments);
+        model.addAttribute("relatedQuestions",relatedQuestions);
         return "question";
     }
 }
