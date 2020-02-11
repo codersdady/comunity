@@ -9,6 +9,8 @@ public enum CustomizedErrorCode implements ICustomizedErrorCode {
     TYPE_PARAM_WRONG(2005,"评论类型错误或不存在"),
     COMMENT_NOT_FOUNT(2006,"你操作的评论不存在"),
     CONTENT_IS_EMPTY(2007,"输入的内容不能为空"),
+    READ_NOTIFICATION_FAIL(2008,"兄弟，你读别人信息？"),
+    NOTIFICATION_NOT_FOUND(2009,"消息不见了"),
     ;
 
     @Override

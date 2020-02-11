@@ -1,5 +1,6 @@
 package life.wz.community.community.controller;
 
+import life.wz.community.community.Service.NotificationService;
 import life.wz.community.community.Service.QuestionService;
 import life.wz.community.community.dto.PaginationDTO;
 import life.wz.community.community.model.User;
@@ -16,6 +17,8 @@ import javax.servlet.http.HttpServletRequest;
 public class ProfileController {
 
 
+    @Autowired
+    private NotificationService notificationService;
     @Autowired
     private QuestionService questionService;
 
@@ -36,13 +39,18 @@ public class ProfileController {
         if("questions".equals(action)){
             model.addAttribute("section","questions");
             model.addAttribute("sectionName","我的提问");
+            PaginationDTO paginationDTO = questionService.list(user.getId(),page,size);
+            model.addAttribute("pagination",paginationDTO);
         }else if("replies".equals(action)){
+            PaginationDTO paginationDTO=notificationService.list(user.getId(),page,size);
+            Long unreadCount=notificationService.unreadCount(user.getId());
             model.addAttribute("section","replies");
+            model.addAttribute("pagination",paginationDTO);
+            model.addAttribute("unreadCount",unreadCount);
             model.addAttribute("sectionName","最新回复");
         }
 
-        PaginationDTO paginationDTO = questionService.list(user.getId(),page,size);
-        model.addAttribute("pagination",paginationDTO);
+
 
         return "profile";
     }
