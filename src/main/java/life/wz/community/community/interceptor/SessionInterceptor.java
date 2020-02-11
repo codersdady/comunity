@@ -1,5 +1,6 @@
 package life.wz.community.community.interceptor;
 
+import life.wz.community.community.Service.NotificationService;
 import life.wz.community.community.mapper.UserMapper;
 import life.wz.community.community.model.User;
 import life.wz.community.community.model.UserExample;
@@ -17,6 +18,8 @@ import java.util.List;
 public class SessionInterceptor implements HandlerInterceptor {
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private NotificationService notificationService;
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         Cookie[] cookies = request.getCookies();
@@ -29,6 +32,8 @@ public class SessionInterceptor implements HandlerInterceptor {
                     List<User> users=userMapper.selectByExample(userExample);
                     if (users.size() != 0) {
                         request.getSession().setAttribute("user", users.get(0));
+                        Long unreadCount = notificationService.unreadCount(users.get(0).getId());
+                        request.getSession().setAttribute("unreadCount",unreadCount);
                     }
                     break;
                 }
