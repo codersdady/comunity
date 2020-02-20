@@ -4,6 +4,7 @@ import life.wz.community.community.dto.AccessTokenDTO;
 import life.wz.community.community.dto.GithubUser;
 import life.wz.community.community.model.User;
 import life.wz.community.community.provider.GithubProvider;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
 @Controller
+@Slf4j
 public class AuthorizeController {
 
     @Autowired
@@ -59,6 +61,7 @@ public class AuthorizeController {
             response.addCookie(new Cookie("token",token));
             return "redirect:/";
         }else {
+            log.error("callback get github error,{}",githubUser);
             return "redirect:/";
         }
 

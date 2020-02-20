@@ -1,0 +1,229 @@
+2020-02-20 20:24:10.508  INFO 6196 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 6196 (E:\community\target\classes started by wz in E:\community)
+2020-02-20 20:24:10.516  INFO 6196 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-20 20:24:11.137  WARN 6196 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-20 20:24:11.183  INFO 6196 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-20 20:24:11.184  INFO 6196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-20 20:24:11.186  INFO 6196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-20 20:24:15.880  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-20 20:24:16.044  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 0 JPA repository interfaces.
+2020-02-20 20:24:17.425  INFO 6196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-20 20:24:19.302  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-20 20:24:19.452  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 20:24:19.453  INFO 6196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-20 20:24:19.825  INFO 6196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 20:24:19.827  INFO 6196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8640 ms
+2020-02-20 20:24:20.032  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-20 20:24:20.644  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-20 20:24:20.673  INFO 6196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-20 20:24:22.050  INFO 6196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-20 20:24:22.335  INFO 6196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-20 20:24:23.097  INFO 6196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-20 20:24:23.836  INFO 6196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-20 20:24:24.633  INFO 6196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-20 20:24:24.667  INFO 6196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 20:24:24.797  INFO 6196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-20 20:24:26.324  WARN 6196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-20 20:24:26.892  INFO 6196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 20:24:27.085  INFO 6196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-20 20:24:28.157  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-20 20:24:28.180  INFO 6196 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 20.889 seconds (JVM running for 26.667)
+2020-02-20 20:24:36.726  INFO 6196 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 20:24:36.727  INFO 6196 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 20:24:36.739  INFO 6196 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-20 20:24:37.291 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
+2020-02-20 20:24:37.317 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==> Parameters: s(String)
+2020-02-20 20:24:37.354 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:24:37.357 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
+2020-02-20 20:24:37.359 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: s(String), 0(Integer), 5(Integer)
+2020-02-20 20:24:37.407 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:24:37.408 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:24:37.410 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:24:37.411 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:24:37.429 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:24:37.430 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:24:37.433 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:24:37.444 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:24:37.445 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:24:37.451 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:24:37.453 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:24:37.454 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:24:37.457 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:24:37.458 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:24:37.458 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:24:37.471 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:06.368 ERROR 6196 --- [http-nio-8887-exec-3] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-20 20:26:06.391 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-20 20:26:06.391 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-20 20:26:06.392 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:26:06.393 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-20 20:26:06.393 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-20 20:26:06.397 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:26:06.398 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:06.398 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:06.398 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:06.399 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:06.399 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:06.400 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:06.401 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:06.401 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:06.402 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:06.402 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:06.402 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:06.403 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:06.404 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:06.404 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:06.404 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:23.034 ERROR 6196 --- [http-nio-8887-exec-6] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-20 20:26:23.049 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-20 20:26:23.049 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-20 20:26:23.051 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:26:23.051 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-20 20:26:23.053 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-20 20:26:23.056 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:26:23.058 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:23.059 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:23.061 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:23.063 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:23.063 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:23.064 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:23.065 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:23.066 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:23.066 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:23.067 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:23.067 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:23.068 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:23.068 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:23.069 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:23.070 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:25.702 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-20 20:26:25.702 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-20 20:26:25.704 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:26:25.705 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-20 20:26:25.706 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-20 20:26:25.713 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:26:25.714 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:25.715 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:25.719 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:25.727 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:25.728 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:25.728 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:25.729 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:25.730 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:25.730 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:25.731 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:25.731 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:25.732 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:26:25.733 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:26:25.733 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:26:25.733 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:27:44.890 ERROR 6196 --- [http-nio-8887-exec-7] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-20 20:27:44.896 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-20 20:27:44.897 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-20 20:27:44.897 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:27:44.898 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-20 20:27:44.898 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-20 20:27:44.900 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:27:44.900 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:27:44.900 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:27:44.902 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:27:44.902 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:27:44.903 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:27:44.903 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:27:44.903 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:16.015 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-20 20:28:16.015 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-20 20:28:16.016 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:28:16.017 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-20 20:28:16.017 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-20 20:28:16.018 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:28:16.019 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:16.019 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:16.019 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:16.020 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:16.020 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:16.021 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:16.022 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:16.022 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:16.023 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:16.023 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:16.023 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:16.024 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:16.025 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:16.025 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:16.026 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:30.121 ERROR 6196 --- [http-nio-8887-exec-8] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-20 20:28:30.127 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-20 20:28:30.128 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-20 20:28:30.129 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:28:30.130 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-20 20:28:30.130 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-20 20:28:30.133 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:28:30.134 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:30.134 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:30.136 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:30.137 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:30.137 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:30.137 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:30.138 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:30.138 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:30.139 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:30.140 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:30.140 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:30.141 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:28:30.142 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:28:30.142 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:28:30.143 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:29:17.353 ERROR 6196 --- [http-nio-8887-exec-5] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-20 20:29:17.360 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-20 20:29:17.360 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-20 20:29:17.360 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-20 20:29:17.361 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-20 20:29:17.362 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-20 20:29:17.365 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-20 20:29:17.366 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:29:17.366 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:29:17.367 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:29:17.368 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:29:17.369 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:29:17.371 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:29:17.373 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:29:17.373 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:29:17.375 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:29:17.376 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:29:17.376 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:29:17.377 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:29:17.378 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:29:17.379 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:29:17.379 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:29:27.526 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectByPrimaryKey           : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2020-02-20 20:29:27.526 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectByPrimaryKey           : ==> Parameters: 342(Long)
+2020-02-20 20:29:27.528 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectByPrimaryKey           : <==      Total: 1
+2020-02-20 20:29:27.528 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-20 20:29:27.528 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-20 20:29:27.529 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-20 20:29:27.529 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectRelated                : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2020-02-20 20:29:27.532 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectRelated                : ==> Parameters: 342(Long), java(String)
+2020-02-20 20:29:27.533 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectRelated                : <==      Total: 1
+2020-02-20 20:29:27.572 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.CommentMapper.selectByExample  : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2020-02-20 20:29:27.573 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.CommentMapper.selectByExample  : ==> Parameters: 342(Long), 1(Integer)
+2020-02-20 20:29:27.574 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.CommentMapper.selectByExample  : <==      Total: 1
+2020-02-20 20:29:27.580 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ID in ( ? ) ) 
+2020-02-20 20:29:27.581 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 165(Long)
+2020-02-20 20:29:27.582 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-20 20:29:27.598 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.QuestionExtMapper.incView      : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT+? where id=? 
+2020-02-20 20:29:27.604 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.QuestionExtMapper.incView      : ==> Parameters: 1(Integer), 342(Long)
+2020-02-20 20:29:27.624 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.QuestionExtMapper.incView      : <==    Updates: 1
+2020-02-20 20:29:31.788 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.CommentMapper.selectByExample  : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2020-02-20 20:29:31.788 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.CommentMapper.selectByExample  : ==> Parameters: 553(Long), 2(Integer)
+2020-02-20 20:29:31.789 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.CommentMapper.selectByExample  : <==      Total: 2
+2020-02-20 20:29:31.790 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ID in ( ? ) ) 
+2020-02-20 20:29:31.791 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 165(Long)
+2020-02-20 20:29:31.791 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
