@@ -1,229 +1,674 @@
-2020-02-20 20:24:10.508  INFO 6196 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 6196 (E:\community\target\classes started by wz in E:\community)
-2020-02-20 20:24:10.516  INFO 6196 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
-2020-02-20 20:24:11.137  WARN 6196 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2020-02-20 20:24:11.183  INFO 6196 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-02-20 20:24:11.184  INFO 6196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-02-20 20:24:11.186  INFO 6196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-02-20 20:24:15.880  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-02-20 20:24:16.044  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 0 JPA repository interfaces.
-2020-02-20 20:24:17.425  INFO 6196 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-02-20 20:24:19.302  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-02-20 20:24:19.452  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-02-20 20:24:19.453  INFO 6196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-02-20 20:24:19.825  INFO 6196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-02-20 20:24:19.827  INFO 6196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8640 ms
-2020-02-20 20:24:20.032  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-02-20 20:24:20.644  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-02-20 20:24:20.673  INFO 6196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
-2020-02-20 20:24:22.050  INFO 6196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-02-20 20:24:22.335  INFO 6196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2020-02-20 20:24:23.097  INFO 6196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-02-20 20:24:23.836  INFO 6196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2020-02-20 20:24:24.633  INFO 6196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-02-20 20:24:24.667  INFO 6196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-02-20 20:24:24.797  INFO 6196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-02-20 20:24:26.324  WARN 6196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-02-20 20:24:26.892  INFO 6196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-02-20 20:24:27.085  INFO 6196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-02-20 20:24:28.157  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-02-20 20:24:28.180  INFO 6196 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 20.889 seconds (JVM running for 26.667)
-2020-02-20 20:24:36.726  INFO 6196 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-02-20 20:24:36.727  INFO 6196 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-02-20 20:24:36.739  INFO 6196 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-02-20 20:24:37.291 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION WHERE title regexp ? 
-2020-02-20 20:24:37.317 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==> Parameters: s(String)
-2020-02-20 20:24:37.354 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:24:37.357 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION WHERE title regexp ? order by gmt_create desc limit ?,? 
-2020-02-20 20:24:37.359 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: s(String), 0(Integer), 5(Integer)
-2020-02-20 20:24:37.407 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:24:37.408 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:24:37.410 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:24:37.411 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:24:37.429 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:24:37.430 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:24:37.433 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:24:37.444 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:24:37.445 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:24:37.451 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:24:37.453 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:24:37.454 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:24:37.457 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:24:37.458 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:24:37.458 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:24:37.471 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:06.368 ERROR 6196 --- [http-nio-8887-exec-3] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
-2020-02-20 20:26:06.391 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
-2020-02-20 20:26:06.391 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
-2020-02-20 20:26:06.392 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:26:06.393 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
-2020-02-20 20:26:06.393 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
-2020-02-20 20:26:06.397 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:26:06.398 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:06.398 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:06.398 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:06.399 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:06.399 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:06.400 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:06.401 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:06.401 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:06.402 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:06.402 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:06.402 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:06.403 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:06.404 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:06.404 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:06.404 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:23.034 ERROR 6196 --- [http-nio-8887-exec-6] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
-2020-02-20 20:26:23.049 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
-2020-02-20 20:26:23.049 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
-2020-02-20 20:26:23.051 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:26:23.051 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
-2020-02-20 20:26:23.053 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
-2020-02-20 20:26:23.056 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:26:23.058 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:23.059 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:23.061 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:23.063 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:23.063 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:23.064 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:23.065 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:23.066 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:23.066 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:23.067 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:23.067 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:23.068 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:23.068 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:23.069 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:23.070 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:25.702 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
-2020-02-20 20:26:25.702 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
-2020-02-20 20:26:25.704 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:26:25.705 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
-2020-02-20 20:26:25.706 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
-2020-02-20 20:26:25.713 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:26:25.714 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:25.715 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:25.719 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:25.727 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:25.728 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:25.728 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:25.729 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:25.730 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:25.730 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:25.731 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:25.731 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:25.732 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:26:25.733 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:26:25.733 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:26:25.733 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:27:44.890 ERROR 6196 --- [http-nio-8887-exec-7] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
-2020-02-20 20:27:44.896 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
-2020-02-20 20:27:44.897 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
-2020-02-20 20:27:44.897 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:27:44.898 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
-2020-02-20 20:27:44.898 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
-2020-02-20 20:27:44.900 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:27:44.900 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:27:44.900 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:27:44.901 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:27:44.902 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:27:44.902 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:27:44.903 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:27:44.903 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:27:44.903 DEBUG 6196 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:16.015 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
-2020-02-20 20:28:16.015 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
-2020-02-20 20:28:16.016 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:28:16.017 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
-2020-02-20 20:28:16.017 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
-2020-02-20 20:28:16.018 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:28:16.019 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:16.019 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:16.019 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:16.020 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:16.020 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:16.021 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:16.022 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:16.022 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:16.023 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:16.023 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:16.023 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:16.024 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:16.025 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:16.025 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:16.026 DEBUG 6196 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:30.121 ERROR 6196 --- [http-nio-8887-exec-8] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
-2020-02-20 20:28:30.127 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
-2020-02-20 20:28:30.128 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
-2020-02-20 20:28:30.129 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:28:30.130 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
-2020-02-20 20:28:30.130 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
-2020-02-20 20:28:30.133 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:28:30.134 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:30.134 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:30.136 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:30.137 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:30.137 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:30.137 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:30.138 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:30.138 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:30.139 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:30.140 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:30.140 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:30.141 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:28:30.142 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:28:30.142 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:28:30.143 DEBUG 6196 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:29:17.353 ERROR 6196 --- [http-nio-8887-exec-5] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
-2020-02-20 20:29:17.360 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
-2020-02-20 20:29:17.360 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
-2020-02-20 20:29:17.360 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
-2020-02-20 20:29:17.361 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
-2020-02-20 20:29:17.362 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
-2020-02-20 20:29:17.365 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
-2020-02-20 20:29:17.366 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:29:17.366 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:29:17.367 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:29:17.368 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:29:17.369 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:29:17.371 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:29:17.373 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:29:17.373 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:29:17.375 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:29:17.376 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:29:17.376 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:29:17.377 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:29:17.378 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:29:17.379 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:29:17.379 DEBUG 6196 --- [http-nio-8887-exec-3] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:29:27.526 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectByPrimaryKey           : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
-2020-02-20 20:29:27.526 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectByPrimaryKey           : ==> Parameters: 342(Long)
-2020-02-20 20:29:27.528 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectByPrimaryKey           : <==      Total: 1
-2020-02-20 20:29:27.528 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
-2020-02-20 20:29:27.528 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
-2020-02-20 20:29:27.529 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
-2020-02-20 20:29:27.529 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectRelated                : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
-2020-02-20 20:29:27.532 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectRelated                : ==> Parameters: 342(Long), java(String)
-2020-02-20 20:29:27.533 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectRelated                : <==      Total: 1
-2020-02-20 20:29:27.572 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.CommentMapper.selectByExample  : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
-2020-02-20 20:29:27.573 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.CommentMapper.selectByExample  : ==> Parameters: 342(Long), 1(Integer)
-2020-02-20 20:29:27.574 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.CommentMapper.selectByExample  : <==      Total: 1
-2020-02-20 20:29:27.580 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ID in ( ? ) ) 
-2020-02-20 20:29:27.581 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 165(Long)
-2020-02-20 20:29:27.582 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
-2020-02-20 20:29:27.598 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.QuestionExtMapper.incView      : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT+? where id=? 
-2020-02-20 20:29:27.604 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.QuestionExtMapper.incView      : ==> Parameters: 1(Integer), 342(Long)
-2020-02-20 20:29:27.624 DEBUG 6196 --- [http-nio-8887-exec-1] l.w.c.c.m.QuestionExtMapper.incView      : <==    Updates: 1
-2020-02-20 20:29:31.788 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.CommentMapper.selectByExample  : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
-2020-02-20 20:29:31.788 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.CommentMapper.selectByExample  : ==> Parameters: 553(Long), 2(Integer)
-2020-02-20 20:29:31.789 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.CommentMapper.selectByExample  : <==      Total: 2
-2020-02-20 20:29:31.790 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ID in ( ? ) ) 
-2020-02-20 20:29:31.791 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 165(Long)
-2020-02-20 20:29:31.791 DEBUG 6196 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-21 10:09:02.537  INFO 11112 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 11112 (E:\community\target\classes started by wz in E:\community)
+2020-02-21 10:09:02.563  INFO 11112 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-21 10:09:03.076  INFO 11112 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-21 10:09:03.082  INFO 11112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 10:09:03.083  INFO 11112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 10:09:03.167  WARN 11112 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-21 10:09:06.958  INFO 11112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-21 10:09:07.068  INFO 11112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 0 JPA repository interfaces.
+2020-02-21 10:09:08.054  INFO 11112 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-21 10:09:09.204  INFO 11112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-21 10:09:09.257  INFO 11112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-21 10:09:09.259  INFO 11112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 10:09:09.681  INFO 11112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-21 10:09:09.682  INFO 11112 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6598 ms
+2020-02-21 10:09:09.824  INFO 11112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-21 10:09:10.412  INFO 11112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-21 10:09:10.429  INFO 11112 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-21 10:09:11.599  INFO 11112 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-21 10:09:11.917  INFO 11112 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-21 10:09:12.391  INFO 11112 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-21 10:09:12.695  INFO 11112 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-21 10:09:13.523  INFO 11112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-21 10:09:13.548  INFO 11112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 10:09:13.758  INFO 11112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-21 10:09:15.057  WARN 11112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-21 10:09:15.565  INFO 11112 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 10:09:15.746  INFO 11112 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-21 10:09:16.595  INFO 11112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-21 10:09:16.619  INFO 11112 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 15.857 seconds (JVM running for 20.321)
+2020-02-21 10:09:28.134  INFO 11112 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 10:09:28.134  INFO 11112 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-21 10:09:28.150  INFO 11112 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-02-21 10:09:28.628 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:09:28.696 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:09:28.769 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:09:28.798 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:09:28.802 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:09:28.814 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:09:28.815 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:09:28.815 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:09:28.817 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:09:28.834 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:09:28.840 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:09:28.842 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:09:28.843 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:09:28.843 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:09:28.850 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:09:28.850 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:09:28.850 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:09:28.855 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:09:28.855 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:09:28.855 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:09:28.856 DEBUG 11112 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:10:36.105 ERROR 11112 --- [http-nio-8887-exec-7] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:10:36.124 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:10:36.126 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:10:36.128 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:10:36.129 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:10:36.129 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:10:36.135 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:10:36.138 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:10:36.139 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:10:36.140 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:10:36.140 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:10:36.141 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:10:36.141 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:10:36.142 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:10:36.142 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:10:36.142 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:10:36.146 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:10:36.148 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:10:36.150 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:10:36.151 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:10:36.152 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:10:36.154 DEBUG 11112 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:11:03.254 ERROR 11112 --- [http-nio-8887-exec-5] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:11:03.291 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:11:03.293 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:11:03.295 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:11:03.296 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:11:03.297 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:11:03.311 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:11:03.314 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:11:03.316 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:11:03.317 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:11:03.317 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:11:03.317 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:11:03.320 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:11:03.320 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:11:03.320 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:11:03.329 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:11:03.329 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:11:03.333 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:11:03.337 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:11:03.346 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:11:03.347 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:11:03.348 DEBUG 11112 --- [http-nio-8887-exec-6] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:12:23.789 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectByPrimaryKey           : ==>  Preparing: select ID, TITLE, GMT_CREATE, GMT_MODIFIED, CREATOR, COMMENT_COUNT, VIEW_COUNT, LIKE_COUNT, TAG , DESCRIPTION from QUESTION where ID = ? 
+2020-02-21 10:12:23.792 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectByPrimaryKey           : ==> Parameters: 375(Long)
+2020-02-21 10:12:23.798 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectByPrimaryKey           : <==      Total: 1
+2020-02-21 10:12:23.802 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:12:23.802 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:12:23.805 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:12:23.807 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectRelated                : ==>  Preparing: select * from QUESTION where id != ? and tag regexp ? 
+2020-02-21 10:12:23.809 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectRelated                : ==> Parameters: 375(Long), spring(String)
+2020-02-21 10:12:23.811 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectRelated                : <==      Total: 5
+2020-02-21 10:12:23.841 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.CommentMapper.selectByExample  : ==>  Preparing: select ID, PARENT_ID, TYPE, COMMENTATOR, GMT_CREATE, GMT_MODIFIED, LIKE_COUNT, CONTENT, COMMENT_COUNT from COMMENT WHERE ( PARENT_ID = ? and TYPE = ? ) order by gmt_create desc 
+2020-02-21 10:12:23.841 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.CommentMapper.selectByExample  : ==> Parameters: 375(Long), 1(Integer)
+2020-02-21 10:12:23.843 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.CommentMapper.selectByExample  : <==      Total: 0
+2020-02-21 10:12:23.843 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.QuestionExtMapper.incView      : ==>  Preparing: update QUESTION set VIEW_COUNT = VIEW_COUNT+? where id=? 
+2020-02-21 10:12:23.844 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.QuestionExtMapper.incView      : ==> Parameters: 1(Integer), 375(Long)
+2020-02-21 10:12:23.870 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.QuestionExtMapper.incView      : <==    Updates: 1
+2020-02-21 10:12:47.052 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:12:47.053 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:12:47.053 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:12:47.054 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:12:47.054 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:12:47.057 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:12:47.057 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:12:47.057 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:12:47.057 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:12:47.058 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:12:47.059 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:12:47.060 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:12:47.061 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:12:47.061 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:12:47.062 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:12:47.062 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:12:47.062 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:12:47.063 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:12:47.065 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:12:47.065 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:12:47.066 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:16:25.402 ERROR 11112 --- [http-nio-8887-exec-6] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:16:27.099 ERROR 11112 --- [http-nio-8887-exec-9] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:16:27.119 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:16:27.120 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:16:27.132 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:16:27.132 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:16:27.136 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:16:27.146 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:16:27.148 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:16:27.148 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:16:27.149 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:16:27.150 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:16:27.152 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:16:27.153 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:16:27.153 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:16:27.153 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:16:27.155 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:16:27.156 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:16:27.157 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:16:27.157 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:16:27.159 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:16:27.159 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:16:27.161 DEBUG 11112 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:18:26.743 ERROR 11112 --- [http-nio-8887-exec-5] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:18:26.762 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:18:26.764 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:18:26.765 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:18:26.766 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:18:26.766 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:18:26.769 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:18:26.770 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:18:26.770 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:18:26.772 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:18:26.776 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:18:26.776 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:18:26.776 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:18:26.778 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:18:26.778 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:18:26.778 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:18:26.779 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:18:26.779 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:18:26.779 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:18:26.779 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:18:26.780 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:18:26.780 DEBUG 11112 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:18:40.839  INFO 7788 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 7788 (E:\community\target\classes started by wz in E:\community)
+2020-02-21 10:18:40.839  INFO 7788 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-21 10:18:40.956  INFO 7788 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-21 10:18:40.956  INFO 7788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 10:18:40.956  INFO 7788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 10:18:41.337  WARN 7788 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-21 10:18:42.966  INFO 7788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-21 10:18:43.192  INFO 7788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145ms. Found 0 JPA repository interfaces.
+2020-02-21 10:18:44.002  INFO 7788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-21 10:18:44.601  INFO 7788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-21 10:18:44.623  INFO 7788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-21 10:18:44.630  INFO 7788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 10:18:44.813  INFO 7788 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-21 10:18:44.813  INFO 7788 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3857 ms
+2020-02-21 10:18:44.953  INFO 7788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-21 10:18:45.267  INFO 7788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-21 10:18:45.275  INFO 7788 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-21 10:18:45.594  INFO 7788 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-21 10:18:45.683  INFO 7788 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-21 10:18:45.940  INFO 7788 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-21 10:18:46.280  INFO 7788 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-21 10:18:46.649  INFO 7788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-21 10:18:46.659  INFO 7788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 10:18:46.715  INFO 7788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-21 10:18:47.279  WARN 7788 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-21 10:18:47.484  INFO 7788 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 10:18:47.598  INFO 7788 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-21 10:18:48.281  INFO 7788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-21 10:18:48.289  INFO 7788 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 8.186 seconds (JVM running for 10.665)
+2020-02-21 10:19:14.622  INFO 7788 --- [http-nio-8887-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 10:19:14.622  INFO 7788 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-21 10:19:14.638  INFO 7788 --- [http-nio-8887-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-21 10:19:14.869 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:19:14.890 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:19:14.911 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:19:14.915 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:19:14.917 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:19:14.924 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:19:14.925 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:14.925 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:14.927 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:14.939 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:14.940 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:14.940 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:14.940 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:14.943 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:14.944 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:14.945 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:14.945 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:14.950 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:14.952 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:14.952 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:14.954 DEBUG 7788 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:34.104 ERROR 7788 --- [http-nio-8887-exec-5] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:19:34.173 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:19:34.175 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:19:34.177 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:19:34.182 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:19:34.183 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:19:34.189 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:19:34.189 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:34.191 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:34.193 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:34.194 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:34.195 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:34.197 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:34.199 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:34.200 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:34.204 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:34.205 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:34.205 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:34.205 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:19:34.208 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:19:34.208 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:19:34.208 DEBUG 7788 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:22:35.520 ERROR 7788 --- [http-nio-8887-exec-6] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:22:35.542 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:22:35.542 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:22:35.547 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:22:35.547 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:22:35.551 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:22:35.565 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:22:35.567 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:22:35.567 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:22:35.568 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:22:35.569 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:22:35.569 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:22:35.570 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:22:35.573 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:22:35.573 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:22:35.574 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:22:35.575 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:22:35.576 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:22:35.577 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:22:35.578 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:22:35.578 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:22:35.581 DEBUG 7788 --- [http-nio-8887-exec-5] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:24:14.754  INFO 10916 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 10916 (E:\community\target\classes started by wz in E:\community)
+2020-02-21 10:24:14.763  INFO 10916 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-21 10:24:14.849  INFO 10916 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-21 10:24:14.849  INFO 10916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 10:24:14.849  INFO 10916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 10:24:14.951  WARN 10916 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-21 10:24:16.147  INFO 10916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-21 10:24:16.190  INFO 10916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+2020-02-21 10:24:16.848  INFO 10916 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-21 10:24:17.547  INFO 10916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-21 10:24:17.568  INFO 10916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-21 10:24:17.572  INFO 10916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 10:24:17.806  INFO 10916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-21 10:24:17.806  INFO 10916 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2957 ms
+2020-02-21 10:24:17.900  INFO 10916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-21 10:24:18.221  INFO 10916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-21 10:24:18.236  INFO 10916 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-21 10:24:18.915  INFO 10916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-21 10:24:19.184  INFO 10916 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-21 10:24:19.574  INFO 10916 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-21 10:24:19.926  INFO 10916 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-21 10:24:20.401  INFO 10916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-21 10:24:20.411  INFO 10916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 10:24:20.477  INFO 10916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-21 10:24:21.481  WARN 10916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-21 10:24:21.754  INFO 10916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 10:24:21.922  INFO 10916 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-21 10:24:23.098  INFO 10916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-21 10:24:23.104  INFO 10916 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 9.188 seconds (JVM running for 12.444)
+2020-02-21 10:25:07.966  INFO 10916 --- [http-nio-8887-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 10:25:07.966  INFO 10916 --- [http-nio-8887-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-21 10:25:07.978  INFO 10916 --- [http-nio-8887-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-21 10:25:08.161 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:25:08.181 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:25:08.200 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:25:08.206 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:25:08.208 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:25:08.212 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:25:08.217 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:25:08.217 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:25:08.217 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:25:08.231 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:25:08.231 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:25:08.231 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:25:08.231 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:25:08.235 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:25:08.235 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:25:08.235 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:25:08.239 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:25:08.242 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:25:08.242 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:25:08.243 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:25:08.243 DEBUG 10916 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:25:28.876  INFO 4544 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 4544 (E:\community\target\classes started by wz in E:\community)
+2020-02-21 10:25:28.877  INFO 4544 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-21 10:25:29.081  INFO 4544 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-21 10:25:29.081  INFO 4544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 10:25:29.081  INFO 4544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 10:25:29.301  WARN 4544 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-21 10:25:31.719  INFO 4544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-21 10:25:31.804  INFO 4544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 0 JPA repository interfaces.
+2020-02-21 10:25:32.948  INFO 4544 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-21 10:25:33.822  INFO 4544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-21 10:25:33.850  INFO 4544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-21 10:25:33.851  INFO 4544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 10:25:34.136  INFO 4544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-21 10:25:34.137  INFO 4544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5056 ms
+2020-02-21 10:25:34.230  INFO 4544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-21 10:25:34.638  INFO 4544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-21 10:25:34.657  INFO 4544 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-21 10:25:35.280  INFO 4544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-21 10:25:35.650  INFO 4544 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-21 10:25:36.346  INFO 4544 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-21 10:25:36.695  INFO 4544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-21 10:25:37.134  INFO 4544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-21 10:25:37.146  INFO 4544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 10:25:37.196  INFO 4544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-21 10:25:37.784  WARN 4544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-21 10:25:37.946  INFO 4544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 10:25:38.040  INFO 4544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-21 10:25:38.485  INFO 4544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-21 10:25:38.490  INFO 4544 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 10.657 seconds (JVM running for 18.122)
+2020-02-21 10:25:41.551  INFO 4544 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 10:25:41.551  INFO 4544 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-21 10:25:41.562  INFO 4544 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-02-21 10:26:19.948  WARN 4544 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s205ms886µs500ns).
+2020-02-21 10:26:37.655 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:26:37.655 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:26:37.678 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:26:37.682 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:26:37.713 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:26:37.713 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:26:37.713 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:26:37.719 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:26:37.720 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:26:37.721 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:26:37.730 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:26:37.730 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.730 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:26:37.733 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.733 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.734 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.734 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.734 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.762 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.762 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.762 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.767 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.767 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.767 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.770 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.770 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.770 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.770 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.770 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.770 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.785 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.785 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.789 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.789 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.789 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.793 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.793 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.793 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.798 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:26:37.798 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:26:37.798 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:26:37.798 DEBUG 4544 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:28:59.276  WARN 4544 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m39s327ms577µs).
+2020-02-21 10:30:01.851 ERROR 4544 --- [http-nio-8887-exec-1] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:31:39.639  WARN 4544 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s159ms203µs200ns).
+2020-02-21 10:31:39.687  WARN 4544 --- [http-nio-8887-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'code' is not present]
+2020-02-21 10:31:41.371 ERROR 4544 --- [http-nio-8887-exec-10] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 10:31:41.391 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 10:31:41.393 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 10:31:41.393 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 10:31:41.393 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 10:31:41.398 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 10:31:41.403 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 10:31:41.409 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:31:41.409 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:31:41.414 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:31:41.415 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:31:41.416 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:31:41.416 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:31:41.419 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:31:41.419 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:31:41.420 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:31:41.421 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:31:41.423 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:31:41.424 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:31:41.424 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 10:31:41.424 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 10:31:41.424 DEBUG 4544 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 10:31:50.543  WARN 4544 --- [http-nio-8887-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'code' is not present]
+2020-02-21 10:45:50.137  WARN 4544 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m40s351ms304µs200ns).
+2020-02-21 10:50:25.085  INFO 4544 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-21 10:50:25.100  INFO 4544 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 10:50:25.100  INFO 4544 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-02-21 10:50:25.105  INFO 4544 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-21 10:50:25.110  INFO 4544 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-21 10:50:37.423  INFO 12316 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 12316 (E:\community\target\classes started by wz in E:\community)
+2020-02-21 10:50:37.424  INFO 12316 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-21 10:50:37.627  INFO 12316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-21 10:50:37.627  INFO 12316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 10:50:37.627  INFO 12316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 10:50:37.869  WARN 12316 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-21 10:50:39.408  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-21 10:50:39.479  INFO 12316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 JPA repository interfaces.
+2020-02-21 10:50:40.090  INFO 12316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-21 10:50:40.763  INFO 12316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-21 10:50:40.787  INFO 12316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-21 10:50:40.787  INFO 12316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 10:50:41.041  INFO 12316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-21 10:50:41.041  INFO 12316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3414 ms
+2020-02-21 10:50:41.097  INFO 12316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-21 10:50:41.388  INFO 12316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-21 10:50:41.405  INFO 12316 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-21 10:50:41.816  INFO 12316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-21 10:50:41.920  INFO 12316 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-21 10:50:42.155  INFO 12316 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-21 10:50:42.369  INFO 12316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-21 10:50:42.672  INFO 12316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-21 10:50:42.679  INFO 12316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 10:50:42.711  INFO 12316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-21 10:50:43.270  WARN 12316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-21 10:50:43.428  INFO 12316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 10:50:43.547  INFO 12316 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-21 10:50:44.132  INFO 12316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-21 10:50:44.136  INFO 12316 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 7.948 seconds (JVM running for 11.272)
+2020-02-21 10:57:05.764  INFO 12316 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 10:57:05.764  INFO 12316 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-21 10:57:05.776  INFO 12316 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-02-21 11:26:28.368  INFO 4384 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 4384 (E:\community\target\classes started by wz in E:\community)
+2020-02-21 11:26:28.383  WARN 4384 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-21 11:26:28.383  INFO 4384 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-21 11:26:28.602  INFO 4384 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-21 11:26:28.602  INFO 4384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 11:26:28.602  INFO 4384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 11:26:33.743  INFO 4384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-21 11:26:33.821  INFO 4384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 JPA repository interfaces.
+2020-02-21 11:26:34.680  INFO 4384 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-21 11:26:35.976  INFO 4384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-21 11:26:36.008  INFO 4384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-21 11:26:36.008  INFO 4384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 11:26:36.211  INFO 4384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-21 11:26:36.211  INFO 4384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7609 ms
+2020-02-21 11:26:36.320  INFO 4384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-21 11:26:36.976  INFO 4384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-21 11:26:37.007  INFO 4384 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-21 11:26:38.507  INFO 4384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-21 11:26:38.726  INFO 4384 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-21 11:26:39.085  INFO 4384 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-21 11:26:39.538  INFO 4384 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-21 11:26:40.100  INFO 4384 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-21 11:26:40.116  INFO 4384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 11:26:40.194  INFO 4384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-21 11:26:41.335  WARN 4384 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-21 11:26:41.631  INFO 4384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 11:26:41.725  INFO 4384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-21 11:26:42.508  INFO 4384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-21 11:26:42.524  INFO 4384 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 17.775 seconds (JVM running for 24.737)
+2020-02-21 11:27:06.736  INFO 4384 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 11:27:06.737  INFO 4384 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-21 11:27:06.766  INFO 4384 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2020-02-21 11:27:07.051 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 11:27:07.063 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 11:27:07.076 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 11:27:07.077 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 11:27:07.079 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 11:27:07.085 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 11:27:07.086 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:07.087 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:07.088 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:07.096 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:07.097 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:07.098 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:07.098 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:07.099 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:07.099 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:07.100 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:07.100 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:07.101 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:07.102 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:07.102 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:07.103 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:15.033 DEBUG 4384 --- [http-nio-8887-exec-7] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( ACCOUNT_ID = ? ) 
+2020-02-21 11:27:15.033 DEBUG 4384 --- [http-nio-8887-exec-7] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 25973326(String)
+2020-02-21 11:27:15.033 DEBUG 4384 --- [http-nio-8887-exec-7] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-21 11:27:15.033 DEBUG 4384 --- [http-nio-8887-exec-7] l.w.c.c.m.U.updateByExampleSelective     : ==>  Preparing: update USER SET NAME = ?, TOKEN = ?, GMT_MODIFIED = ?, AVATAR_URL = ? WHERE ( ID = ? ) 
+2020-02-21 11:27:15.051 DEBUG 4384 --- [http-nio-8887-exec-7] l.w.c.c.m.U.updateByExampleSelective     : ==> Parameters: wz_cd(String), 80b1ae1e-60f6-43df-b304-28ec8f6731da(String), 1582255635033(Long), https://avatars3.githubusercontent.com/u/25973326?v=4(String), 165(Long)
+2020-02-21 11:27:15.077 DEBUG 4384 --- [http-nio-8887-exec-7] l.w.c.c.m.U.updateByExampleSelective     : <==    Updates: 1
+2020-02-21 11:27:15.103 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-21 11:27:15.103 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 80b1ae1e-60f6-43df-b304-28ec8f6731da(String)
+2020-02-21 11:27:15.105 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-21 11:27:15.113 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.N.countByExample               : ==>  Preparing: select count(*) from NOTIFICATION WHERE ( RECEIVER = ? and STATUS = ? ) 
+2020-02-21 11:27:15.114 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.N.countByExample               : ==> Parameters: 165(Long), 0(Integer)
+2020-02-21 11:27:15.120 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.N.countByExample               : <==      Total: 1
+2020-02-21 11:27:15.122 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 11:27:15.122 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 11:27:15.122 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 11:27:15.123 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 11:27:15.123 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 11:27:15.126 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 11:27:15.127 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:15.127 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:15.128 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:15.130 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:15.130 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:15.131 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:15.131 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:15.132 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:15.134 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:15.135 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:15.136 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:15.138 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:15.139 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 11:27:15.140 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 11:27:15.141 DEBUG 4384 --- [http-nio-8887-exec-8] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 11:27:15.222 DEBUG 4384 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-21 11:27:15.222 DEBUG 4384 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 80b1ae1e-60f6-43df-b304-28ec8f6731da(String)
+2020-02-21 11:27:15.223 DEBUG 4384 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-21 11:27:15.225 DEBUG 4384 --- [http-nio-8887-exec-9] l.w.c.c.m.N.countByExample               : ==>  Preparing: select count(*) from NOTIFICATION WHERE ( RECEIVER = ? and STATUS = ? ) 
+2020-02-21 11:27:15.225 DEBUG 4384 --- [http-nio-8887-exec-9] l.w.c.c.m.N.countByExample               : ==> Parameters: 165(Long), 0(Integer)
+2020-02-21 11:27:15.226 DEBUG 4384 --- [http-nio-8887-exec-9] l.w.c.c.m.N.countByExample               : <==      Total: 1
+2020-02-21 11:27:15.236 DEBUG 4384 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-21 11:27:15.237 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-21 11:27:15.237 DEBUG 4384 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 80b1ae1e-60f6-43df-b304-28ec8f6731da(String)
+2020-02-21 11:27:15.237 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 80b1ae1e-60f6-43df-b304-28ec8f6731da(String)
+2020-02-21 11:27:15.237 DEBUG 4384 --- [http-nio-8887-exec-10] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-21 11:27:15.238 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-21 11:27:15.239 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.N.countByExample               : ==>  Preparing: select count(*) from NOTIFICATION WHERE ( RECEIVER = ? and STATUS = ? ) 
+2020-02-21 11:27:15.242 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.N.countByExample               : ==> Parameters: 165(Long), 0(Integer)
+2020-02-21 11:27:15.241 DEBUG 4384 --- [http-nio-8887-exec-10] l.w.c.c.m.N.countByExample               : ==>  Preparing: select count(*) from NOTIFICATION WHERE ( RECEIVER = ? and STATUS = ? ) 
+2020-02-21 11:27:15.243 DEBUG 4384 --- [http-nio-8887-exec-1] l.w.c.c.m.N.countByExample               : <==      Total: 1
+2020-02-21 11:27:15.245 DEBUG 4384 --- [http-nio-8887-exec-10] l.w.c.c.m.N.countByExample               : ==> Parameters: 165(Long), 0(Integer)
+2020-02-21 11:27:15.246 DEBUG 4384 --- [http-nio-8887-exec-10] l.w.c.c.m.N.countByExample               : <==      Total: 1
+2020-02-21 11:27:15.329 DEBUG 4384 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByExample     : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER WHERE ( TOKEN = ? ) 
+2020-02-21 11:27:15.330 DEBUG 4384 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByExample     : ==> Parameters: 80b1ae1e-60f6-43df-b304-28ec8f6731da(String)
+2020-02-21 11:27:15.335 DEBUG 4384 --- [http-nio-8887-exec-4] l.w.c.c.m.UserMapper.selectByExample     : <==      Total: 1
+2020-02-21 11:27:15.337 DEBUG 4384 --- [http-nio-8887-exec-4] l.w.c.c.m.N.countByExample               : ==>  Preparing: select count(*) from NOTIFICATION WHERE ( RECEIVER = ? and STATUS = ? ) 
+2020-02-21 11:27:15.337 DEBUG 4384 --- [http-nio-8887-exec-4] l.w.c.c.m.N.countByExample               : ==> Parameters: 165(Long), 0(Integer)
+2020-02-21 11:27:15.337 DEBUG 4384 --- [http-nio-8887-exec-4] l.w.c.c.m.N.countByExample               : <==      Total: 1
+2020-02-21 12:09:31.170  INFO 10064 --- [restartedMain] l.w.c.community.CommunityApplication     : Starting CommunityApplication on DESKTOP-5KMFIE5 with PID 10064 (E:\community\target\classes started by wz in E:\community)
+2020-02-21 12:09:31.172  INFO 10064 --- [restartedMain] l.w.c.community.CommunityApplication     : No active profile set, falling back to default profiles: default
+2020-02-21 12:09:31.223  INFO 10064 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\whqsh\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/whqsh/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-21 12:09:31.223  INFO 10064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-21 12:09:31.224  INFO 10064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-21 12:09:31.280  WARN 10064 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-02-21 12:09:32.457  INFO 10064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-21 12:09:32.488  INFO 10064 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2020-02-21 12:09:32.850  INFO 10064 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-21 12:09:33.303  INFO 10064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2020-02-21 12:09:33.313  INFO 10064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-21 12:09:33.313  INFO 10064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-21 12:09:33.401  INFO 10064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-21 12:09:33.402  INFO 10064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2178 ms
+2020-02-21 12:09:33.439  INFO 10064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-21 12:09:33.678  INFO 10064 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-21 12:09:33.685  INFO 10064 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:E:/community'
+2020-02-21 12:09:33.970  INFO 10064 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-21 12:09:34.079  INFO 10064 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-21 12:09:34.265  INFO 10064 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-21 12:09:34.438  INFO 10064 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-02-21 12:09:34.664  INFO 10064 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-21 12:09:34.673  INFO 10064 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-21 12:09:34.711  INFO 10064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-21 12:09:35.283  WARN 10064 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-21 12:09:35.404  INFO 10064 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-21 12:09:35.479  INFO 10064 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-21 12:09:35.755  INFO 10064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2020-02-21 12:09:35.759  INFO 10064 --- [restartedMain] l.w.c.community.CommunityApplication     : Started CommunityApplication in 5.071 seconds (JVM running for 10.094)
+2020-02-21 12:09:37.027  INFO 10064 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-21 12:09:37.027  INFO 10064 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-21 12:09:37.039  INFO 10064 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-21 12:09:37.367 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 12:09:37.385 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 12:09:37.410 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 12:09:37.412 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 12:09:37.429 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 12:09:37.432 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 12:09:37.433 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 12:09:37.433 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 12:09:37.434 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 12:09:37.434 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 12:09:37.443 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 12:09:37.444 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.445 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 12:09:37.445 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.445 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.446 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.447 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.448 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.465 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.465 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.465 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.466 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.466 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.466 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.466 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.466 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.467 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.467 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.467 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.468 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.468 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.467 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.469 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.471 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.472 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.468 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.477 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.478 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:37.480 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.480 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:37.481 DEBUG 10064 --- [http-nio-8887-exec-1] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:37.482 DEBUG 10064 --- [http-nio-8887-exec-2] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:53.912 ERROR 10064 --- [http-nio-8887-exec-8] l.w.c.c.controller.AuthorizeController   : callback get github error,GithubUser(name=null, id=null, bio=null, avatar_url=null)
+2020-02-21 12:09:53.927 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==>  Preparing: select count(*) from QUESTION 
+2020-02-21 12:09:53.927 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : ==> Parameters: 
+2020-02-21 12:09:53.928 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.countBySearch                : <==      Total: 1
+2020-02-21 12:09:53.929 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==>  Preparing: select * from QUESTION order by gmt_create desc limit ?,? 
+2020-02-21 12:09:53.929 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : ==> Parameters: 0(Integer), 5(Integer)
+2020-02-21 12:09:53.933 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.Q.selectBySearch               : <==      Total: 5
+2020-02-21 12:09:53.934 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:53.935 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:53.935 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:53.936 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:53.936 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:53.937 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:53.937 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:53.938 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:53.938 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:53.939 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:53.940 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:53.940 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
+2020-02-21 12:09:53.941 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==>  Preparing: select ID, ACCOUNT_ID, NAME, TOKEN, GMT_CREATE, GMT_MODIFIED, BIO, AVATAR_URL from USER where ID = ? 
+2020-02-21 12:09:53.941 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : ==> Parameters: 165(Long)
+2020-02-21 12:09:53.942 DEBUG 10064 --- [http-nio-8887-exec-9] l.w.c.c.m.UserMapper.selectByPrimaryKey  : <==      Total: 1
