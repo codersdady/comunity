@@ -10,22 +10,22 @@
 **在docker容器中，此项目在1000总量，100并发情况下的压力测试：**
 
 
-![avatar][https://github.com/codersdady/comunity/img/docker_community_100.png]
+![avatar](https://github.com/codersdady/comunity/blob/master/img/docker_community_100.png)
 
 
 **在docker容器中，此项目在1000总量，单线程下的压力测试：**
 
-![avatar][https://github.com/codersdady/comunity/img/docker_community_one.png]
+![avatar](https://github.com/codersdady/comunity/blob/master/img/docker_community_one.png)
 
 
 **在本机win10中，此项目在1000总量，100并发情况下的压力测试：**
 
-![avatar][https://github.com/codersdady/comunity/img/win_community_100.png]
+![avatar](https://github.com/codersdady/comunity/blob/master/img/win_community_100.png)
 
 
 **在本机win10中，此项目在1000总量，单线程下的压力测试：**
 
-![avatar][https://github.com/codersdady/comunity/img/win_community_one.png]
+![avatar](https://github.com/codersdady/comunity/blob/master/img/win_community_one.png)
 
 
 ## 工具  
